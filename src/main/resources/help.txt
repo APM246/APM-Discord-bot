@@ -1,0 +1,45 @@
+```css
+--------------------  Reddit [***NOW WITH SPECIFIERS***] ---------------------
+
+>post [subreddit name] [sort specifier [time period]]
+Displays content from a random post in specified subreddit 
+
+>comment [subreddit name]
+ Displays newest comment from that subreddit
+
+>search [search terms]
+ Returns a list of subreddits based on the search terms
+
+ -------------------- Games -----------------------
+>game 
+ Starts a game where you have to guess the location (city, state, country, etc.) of the photo. The text channel has 10 tries
+
+>guess [answer]
+ Attempt a guess
+
+>quit
+ Stops the game and reveals the answer
+
+--------------------  Miscellaneous --------------
+>joke 
+ Generates a random Dad Joke
+
+>news [top (optional)]
+ Gets latest news headline from New York Times 
+
+--------------------  Meta -----------------------
+>purge
+Removes last message sent by bot
+
+>stat [command]
+ Displays number of times a command has been requested
+
+>about
+ Link to Github repository
+
+>help
+Generates this message
+
+>update
+Summary of latest update to the bot (patch notes)
+```

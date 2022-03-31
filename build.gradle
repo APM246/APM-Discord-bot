@@ -1,0 +1,31 @@
+plugins {
+    id'application'
+    id'com.github.johnrengelman.shadow' version '4.0.4'
+    id'java'
+}
+
+mainClassName = 'me.name.bot.Bot'
+
+version '1.0'
+def jdaVersion = 'JDA_VERSION_HERE'
+
+sourceCompatibility = targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile "net.dv8tion:JDA:4.2.0_214"
+    compile "net.dean.jraw:JRAW:1.1.0"
+    compile 'com.sedmelluq:lavaplayer:1.3.34'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'me.name.bot.Bot'
+    }
+}
